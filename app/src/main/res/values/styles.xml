@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="InteriorDialog" parent="Theme.AppCompat.Dialog">
+
+        <item name="android:background">@color/colorInterior</item>
+        <item name="buttonStyle">@style/InteriorDialogButton</item>
+
+    </style>
+
+    <style name="InteriorDialogButton">
+        <item name="android:background">@color/colorInterior</item>
+        <item name="android:textColor">@color/colorWhiteAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="ExteriorDialog" parent="Theme.AppCompat.Dialog">
+
+        <item name="android:background">@color/colorExterior</item>
+        <item name="buttonStyle">@style/ExteriorDialogButton</item>
+        <item name="colorAccent">@color/colorWhiteAccent</item>
+
+    </style>
+
+    <style name="ExteriorDialogButton">
+        <item name="android:background">@color/colorExterior</item>
+        <item name="android:textColor">@color/colorWhiteAccent</item>
+    </style>
+
+</resources>

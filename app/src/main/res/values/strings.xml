@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EventCount</string>
+    <string name="interior_count_key">IntCount</string>
+    <string name="exterior_count_key">ExtCount</string>
+    <string name="event_counter_key">EventCounter</string>
+    <string name="content_description_register_exit_button">Register Exit Button</string>
+    <string name="content_description_register_return_button">Register Return Button</string>
+    <string name="dialog_title_interior_counter_count">Interior Counter Count</string>
+    <string name="dialog_title_exterior_counter_count">Exterior Counter Count</string>
+</resources>

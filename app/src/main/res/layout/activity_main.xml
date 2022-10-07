@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mzom.eventcount.MainActivity"
+    android:orientation="vertical">
+
+    <!-- Interior Counter Container -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/interior_counter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/colorInterior">
+
+        <!-- Interior Counter Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:alpha="0.2"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorInteriorDark"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Interior Counter Count -->
+        <TextView
+            android:id="@+id/interior_counter_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="96sp"
+            android:textColor="@color/colorWhiteAccent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/interior_counter_adjust_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/interior_counter_adjust_subtract"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/interior_counter_adjust_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Entering and leaving buttons -->
+    <LinearLayout
+        android:id="@+id/counter_exit_return_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhiteAccent">
+
+        <ImageButton
+            android:padding="20dp"
+            android:id="@+id/counter_exit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorExteriorDark"
+            android:tint="@color/colorWhiteAccent"
+            android:src="@drawable/ic_round_arrow_downward_24px"
+            android:contentDescription="@string/content_description_register_exit_button"/>
+
+        <ImageButton
+            android:padding="20dp"
+            android:id="@+id/counter_return_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorInteriorDark"
+            android:tint="@color/colorWhiteAccent"
+            android:src="@drawable/ic_round_arrow_upward_24px"
+            android:contentDescription="@string/content_description_register_return_button"/>
+
+    </LinearLayout>
+
+    <!-- Exterior Counter Container -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/exterior_counter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorExterior">
+
+        <!-- Exterior Counter Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:alpha="0.5"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorExteriorDark"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Exterior Counter Count -->
+        <TextView
+            android:id="@+id/exterior_counter_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="64sp"
+            android:textColor="@color/colorWhiteAccent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/exterior_counter_adjust_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/exterior_counter_adjust_subtract"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/exterior_counter_adjust_add"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
